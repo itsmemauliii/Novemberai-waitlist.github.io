@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NovemberAI — Waitlist</title>
+  <meta name="description" content="NovemberAI builds AI-powered assistants, websites, and apps for consultants, startups, and businesses. Join the waitlist." />
+  <meta property="og:title" content="NovemberAI — Your AI co-pilot for smarter work" />
+  <meta property="og:description" content="AI assistants, websites, and apps that handle the busywork so you can focus on clients, growth, and strategy." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0b1220" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b1220; --panel:#0f172a; --muted:#94a3b8; --text:#e2e8f0;
+      --brand:#60a5fa; --brand-strong:#3b82f6;
+      --radius:18px; --shadow:0 10px 30px rgba(2,6,23,.5); --maxw:1120px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial;
+      background: radial-gradient(1200px 600px at 20% -10%, rgba(59,130,246,.25), transparent 60%),
+                  radial-gradient(1000px 800px at 120% 10%, rgba(96,165,250,.18), transparent 60%),
+                  var(--bg);
+      color:var(--text); line-height:1.6;
+    }
+    a{color:var(--brand); text-decoration:none}
+    a:hover{color:var(--brand-strong)}
+    .container{max-width:var(--maxw); margin:0 auto; padding:24px}
+    header{padding:28px 0 8px}
+    .brand{display:flex; align-items:center; gap:12px}
+    .logo{display:inline-grid;place-items:center;width:42px;height:42px;border-radius:12px;
+      background:linear-gradient(135deg,#3b82f6,#22c55e); box-shadow:var(--shadow); font-weight:700;color:#0b1220}
+    .hero{padding:40px 0 24px; display:grid; gap:22px}
+    .hero h1{font-size:clamp(32px,6vw,52px); line-height:1.1; margin:0; letter-spacing:-.02em}
+    .hero p{font-size:clamp(16px,2.4vw,20px); color:var(--muted); max-width:780px; margin:0}
+    .cta-row{display:flex; gap:12px; flex-wrap:wrap; padding-top:8px}
+    .btn{display:inline-flex; align-items:center; justify-content:center; gap:10px; padding:14px 18px;
+      border-radius:12px; border:1px solid rgba(226,232,240,.08);
+      background:linear-gradient(180deg, rgba(59,130,246,.25), rgba(59,130,246,.12));
+      color:#e8f1ff; font-weight:600; cursor:pointer; transition:.2s transform, .2s filter}
+    .btn:hover{transform:translateY(-1px); filter:brightness(1.05)}
+    .metrics{margin:16px 0 24px; display:grid; grid-template-columns:1fr; gap:12px}
+    .metric{background:rgba(15,23,42,.75); border:1px solid rgba(226,232,240,.06); border-radius:12px; padding:12px 14px; display:flex; align-items:center; gap:10px}
+    .metric strong{color:#fff}
+    @media(min-width:720px){.metrics{grid-template-columns:repeat(3,1fr)}}
+    section{padding:32px 0}
+    h2{font-size:clamp(22px,3.2vw,32px); margin:0 0 8px}
+    .muted{color:var(--muted)}
+    .grid-3{display:grid; gap:16px; grid-template-columns:1fr}
+    @media(min-width:860px){.grid-3{grid-template-columns:repeat(3,1fr)}}
+    .card{background:rgba(15,23,42,.7); border:1px solid rgba(226,232,240,.06); border-radius:var(--radius); padding:18px; box-shadow:var(--shadow)}
+    .card h3{margin:0 0 6px; font-size:18px}
+    .form-wrap{background:linear-gradient(180deg,rgba(2,6,23,.6),rgba(2,6,23,.3)); border:1px solid rgba(226,232,240,.08); padding:22px; border-radius:var(--radius); box-shadow:var(--shadow)}
+    form{display:grid; gap:12px}
+    label{font-size:14px; color:#cbd5e1}
+    input,select,textarea{
+      width:100%; background:#0b1220; color:#e2e8f0; border:1px solid rgba(226,232,240,.1);
+      border-radius:12px; padding:12px 14px; font-size:16px; outline:none; transition:border-color .2s
+    }
+    input:focus,select:focus,textarea:focus{border-color:var(--brand)}
+    .row{display:grid; gap:12px; grid-template-columns:1fr}
+    @media(min-width:720px){.row{grid-template-columns:repeat(2,1fr)}}
+    .consent{display:flex; align-items:flex-start; gap:10px; font-size:14px; color:var(--muted)}
+    .consent input{width:auto; margin-top:3px}
+    .notice{font-size:13px; color:var(--muted)}
+    .success{display:none; padding:12px 14px; border-radius:12px; background:rgba(34,197,94,.12); border:1px solid rgba(34,197,94,.4)}
+    .error{display:none; padding:12px 14px; border-radius:12px; background:rgba(239,68,68,.12); border:1px solid rgba(239,68,68,.4)}
+    footer{padding:32px 0 48px; color:var(--muted); font-size:14px}
+    .footer-grid{display:grid; gap:14px; grid-template-columns:1fr}
+    @media(min-width:720px){.footer-grid{grid-template-columns:1fr auto; align-items:center}}
+    .share-row{margin-top:8px; display:flex; gap:10px; justify-content:center; flex-wrap:wrap}
+    .share-row a{padding:8px 12px; border-radius:8px; background:#0f172a; color:#e2e8f0; text-decoration:none; border:1px solid rgba(226,232,240,.08)}
+    .share-row a:hover{background:#111827}
+  </style>
+</head>
+<body>
+  <header class="container">
+    <div class="brand">
+      <div class="logo" aria-hidden="true">N</div>
+      <div>
+        <strong style="font-size:18px; letter-spacing:-.01em;">NovemberAI</strong><br/>
+        <span class="muted" style="font-size:13px;">AI-powered assistants, websites & apps</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Hero -->
+    <section class="hero">
+      <h1>Your AI co-pilot for smarter work.</h1>
+      <p>NovemberAI builds AI assistants, websites, and apps that take care of the repetitive tasks — so you can focus on clients, growth, and strategy.</p>
+      <div class="cta-row">
+        <a class="btn" href="#waitlist">Join the waitlist</a>
+        <a class="btn" href="#what">See what we build</a>
+      </div>
+    </section>
+
+    <!-- Metrics -->
+    <div class="metrics">
+      <div class="metric">⏳ <strong>Save 10+ hours/week</strong> · Automate the busywork, not the thinking.</div>
+      <div class="metric">🎨 <strong>Client-ready outputs</strong> · Proposals & reports in minutes.</div>
+      <div class="metric">⚡ <strong>Scales with you</strong> · Solo → startup → enterprise.</div>
+    </div>
+
+    <!-- Who it's for -->
+    <section aria-labelledby="who">
+      <h2 id="who">Made for the people building the future</h2>
+      <p class="muted">Consultants, startups, and business teams who want to work faster and deliver more.</p>
+      <div class="grid-3" style="margin-top:12px;">
+        <div class="card"><h3>👔 Consultants</h3><p>Win more clients with proposals and reports that write themselves.</p></div>
+        <div class="card"><h3>🚀 Startups</h3><p>Launch AI websites & tools that grow with you from day one.</p></div>
+        <div class="card"><h3>🏢 Businesses</h3><p>Automate workflows and build dashboards that save teams hours.</p></div>
+      </div>
+    </section>
+
+    <!-- What we build -->
+    <section id="what" aria-labelledby="what-title">
+      <h2 id="what-title">Your AI co-pilot, your way</h2>
+      <p class="muted">Concrete tools we can launch for you.</p>
+      <div class="grid-3" style="margin-top:12px;">
+        <div class="card"><h3>📝 Proposal & report generators</h3><p>Create polished client deliverables in minutes, tailored to your voice.</p></div>
+        <div class="card"><h3>📊 Insight dashboards</h3><p>Numbers that explain themselves — automatic summaries & visuals.</p></div>
+        <div class="card"><h3>🚀 AI websites & chatbots</h3><p>High-converting sites with an always-on AI that answers questions.</p></div>
+        <div class="card"><h3>📂 Knowledge hubs</h3><p>Docs that organize themselves and surface what matters fast.</p></div>
+      </div>
+    </section>
+
+    <!-- Waitlist form -->
+    <section id="waitlist" aria-labelledby="waitlist-title">
+      <h2 id="waitlist-title">Join the NovemberAI waitlist</h2>
+      <p class="muted">Be the first to try our AI assistants, websites, and apps. No spam — just useful updates.</p>
+
+      <div class="form-wrap" style="margin-top:14px;">
+        <form id="wl-form" action="https://getform.io/f/apjzzkea" method="POST" novalidate>
+          <div class="row">
+            <div>
+              <label for="name">Full name</label>
+              <input id="name" name="name" type="text" autocomplete="name" placeholder="Alex Doe" required />
+            </div>
+            <div>
+              <label for="email">Work email</label>
+              <input id="email" name="email" type="email" autocomplete="email" placeholder="alex@company.com" required />
+            </div>
+          </div>
+          <div class="row">
+            <div>
+              <label for="role">I am a…</label>
+              <select id="role" name="role" required>
+                <option value="" disabled selected>Select one</option>
+                <option>Consultant</option>
+                <option>Startup founder</option>
+                <option>Business/Team lead</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div>
+              <label for="company">Company (optional)</label>
+              <input id="company" name="company" type="text" placeholder="Company / Firm" />
+            </div>
+          </div>
+          <div>
+            <label for="use">What would you build first? (optional)</label>
+            <textarea id="use" name="use" rows="3" placeholder="e.g., Proposal generator for client work, dashboard for KPIs, AI website with chatbot…"></textarea>
+          </div>
+          <div class="consent">
+            <input id="consent" name="consent" type="checkbox" required />
+            <label for="consent">I agree to receive occasional emails about NovemberAI’s beta and product updates.</label>
+          </div>
+          <input type="hidden" name="source" value="github-pages" />
+          <div class="notice">We respect your inbox. Unsubscribe any time.</div>
+          <button class="btn" type="submit" id="submit-btn">Request early access</button>
+
+          <div id="form-success" class="success" role="status" aria-live="polite">
+            🎉 Thanks! You’re on the list. We’ll be in touch soon.
+            <div class="share-row">
+              <a id="share-x"  href="#" target="_blank" rel="noopener">Share on X</a>
+              <a id="share-li" href="#" target="_blank" rel="noopener">Share on LinkedIn</a>
+              <a id="share-copy" href="#">Copy link</a>
+            </div>
+          </div>
+          <div id="form-error" class="error" role="alert" aria-live="polite">
+            Something went wrong. Please try again or email us directly.
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- About / Vision -->
+    <section aria-labelledby="about-title">
+      <h2 id="about-title">About NovemberAI</h2>
+      <p>NovemberAI is a next-generation SaaS company creating AI-powered assistants for professionals and businesses. Our mission is simple: take care of the repetitive tasks that slow people down, so they can focus on strategy, growth, and meaningful work.</p>
+      <p>From generating client-ready proposals and reports to delivering financial insights and data clarity, we build tools that turn busywork into effortless workflows — designed to be simple, human-friendly, and business-ready.</p>
+      <p class="muted">Vision: a future where every professional has an AI co-pilot — not just to automate tasks, but to help people make better decisions, communicate more clearly, and achieve results faster.</p>
+    </section>
+  </main>
+
+  <footer class="container">
+    <div class="footer-grid">
+      <div>© <span id="year"></span> NovemberAI. All rights reserved.</div>
+      <div>Questions? Email <a href="mailto:hello@novemberai.com">hello@novemberai.com</a></div>
+    </div>
+  </footer>
+
+  <script>
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Handle async form submit (inline success)
+    const form = document.getElementById('wl-form');
+    const successEl = document.getElementById('form-success');
+    const errorEl = document.getElementById('form-error');
+    const submitBtn = document.getElementById('submit-btn');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      successEl.style.display = 'none';
+      errorEl.style.display = 'none';
+
+      if (!form.reportValidity()) return;
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Submitting…';
+
+      try {
+        const data = new FormData(form);
+        const res = await fetch(form.action, { method: 'POST', body: data, headers: {'Accept':'application/json'} });
+        if (res.ok) {
+          form.reset();
+          successEl.style.display = 'block';
+          // Build share links
+          const siteURL = window.location.origin + window.location.pathname;
+          const text = encodeURIComponent("I just joined the NovemberAI waitlist — AI co-pilot for smarter work. Join me:");
+          document.getElementById('share-x').href  = `https://twitter.com/intent/tweet?text=${text}&url=${encodeURIComponent(siteURL)}`;
+          document.getElementById('share-li').href = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(siteURL)}`;
+          document.getElementById('share-copy').addEventListener('click', (ev) => {
+            ev.preventDefault();
+            navigator.clipboard.writeText(siteURL).then(()=>alert("Link copied!"));
+          });
+        } else {
+          const payload = await res.json().catch(()=>({}));
+          errorEl.textContent = payload.error || 'Submission failed. Please try again.';
+          errorEl.style.display = 'block';
+        }
+      } catch (err) {
+        errorEl.textContent = 'Network error. Please try again.';
+        errorEl.style.display = 'block';
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Request early access';
+      }
+    });
+  </script>
+</body>
+</html>
